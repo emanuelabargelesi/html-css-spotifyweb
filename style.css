@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* NAV BAR FISSA A SX */
+nav {
+  background-color: black;
+  position: fixed;
+  height: 89vh;
+  color: white;
+  padding-top: 30px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+nav ul:first-of-type a, nav ul:nth-of-type(3) a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+nav ul .fas {
+  margin-right: 10px;
+}
+
+.alogo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+
+nav ul:nth-of-type(2) a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+nav ul:nth-of-type(2) li {
+  margin: 10px 0;
+}
+
+
+nav ul:nth-last-of-type(2) a {
+font-size: 12px;
+}
+
+nav ul:nth-of-type(2) li:first-child {
+  color: grey;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+nav ul:first-of-type a:hover, nav ul:nth-of-type(2) a:hover, nav ul:nth-of-type(3) a:hover, .alogo a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+nav hr {
+  margin: 0;
+}
+
+nav ul:nth-of-type(3) {
+  margin-top: 80px;
+}
+
+.dropdown {
+  display: none;
+  }
+
+  .dropdown button {
+    background-color: rgba(128, 0, 0, 0);
+    border: none;
+    color: white;
+    margin: 30px 0 0 30px;
+  }
+
+.dropdown .fas:first-child{
+  font-size: 30px;
+}
+
+
+.dropdown .dropdown_content a .fas {
+  font-size: 20px;
+  margin: 0 0 0 30px;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  min-width: 130px;
+  z-index: 1;
+}
+
+.dropdown_content a {
+  color: white;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown_content {display: block;}
+
+
+
+@media (max-width: 768px) {
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+    .cont_nav {
+     display: none;
+   }
+
+}
+
+/* MAIN */
+
+main {
+  background-color: blue;
+  background-image: linear-gradient(to right, rgb(51, 72, 86) , rgb(19, 27, 33));
+  height: 89vh;
+  overflow-y: auto;
+}
+
+/* PRIMA SEZIONE */
+
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(40, 40, 40);
+  position: fixed;
+  height: 11vh;
+}
